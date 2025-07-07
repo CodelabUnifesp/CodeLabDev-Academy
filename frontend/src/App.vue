@@ -1,13 +1,36 @@
 <script setup lang="ts">
+import TheFooter from './components/TheFooter.vue';
 import TheHeader from './components/TheHeader.vue';
 </script>
 
 <template>
-  <TheHeader></TheHeader>
+  <div class="app-container">
+    <TheHeader></TheHeader>
+    <main class="main-content">
+      <!-- conteúdo longo -->
+    </main>
+    <TheFooter></TheFooter>
+  </div>
 </template>
 
 <style scoped>
-#app {
-  width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#app,
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  height: 100%;
 }
 </style>
