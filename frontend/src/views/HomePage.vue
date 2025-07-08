@@ -12,13 +12,17 @@
                 <h3>{{ card.title }}</h3>
             </div>
             <p class="description">{{ card.description }}</p>
-            <button @click="acessar(card.title)">Acessar ></button>
+            <router-link :to="`/curso/${card.slug}`" class="acessar-btn">
+              Acessar &gt;
+            </router-link>
         </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import gitCourse from '../data/courses/git-github/git-github'
+
 defineProps({
   title: {
     type: String,
@@ -32,7 +36,8 @@ defineProps({
 
 const cards = [
   {
-    title: 'Introdução Git e GitHub',
+    slug: gitCourse.slug,
+    title: gitCourse.name,
     time: '10 min',
     image: 'https://assets.dio.me/2j-8wvnftcFuoBr4QmgwILeIborbn4dKrjsH199rD28/f:webp/q:80/L2FydGljbGVzL2NvdmVyL2ZlYmZlNDg5LWQwMjctNGQ4Yy04M2EwLTNkYTU5MzEwMjgzYi5wbmc',
     description: 'Aprenda os primeiros passos com Git e versionamento de código.'
@@ -51,9 +56,6 @@ const cards = [
   }
 ]
 
-function acessar(title: string) {
-  alert(`Você clicou em: ${title}`)
-}
 </script>
 
 <style scoped>
@@ -132,7 +134,7 @@ function acessar(title: string) {
   color: #444;
 }
 
-button {
+.acessar-btn {
   background-color: #1d1d1f;
   color: white;
   border: none;
@@ -140,9 +142,10 @@ button {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
-button:hover {
+.acessar-btn:hover {
   background-color: #7a7a7a;
 }
 </style>
