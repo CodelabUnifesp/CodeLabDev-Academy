@@ -4,7 +4,8 @@ import lesson2 from './lesson2'
 
 const gitCourse: Course = {
   slug: 'git_github',
-  name: 'Git and GitHub Basics',
+  name: 'Git e Github',
+  time: '1 hora',
   lessons: [lesson1, lesson2]
 }
 
