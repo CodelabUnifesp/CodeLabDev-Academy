@@ -5,11 +5,11 @@ import TheHeader from './components/TheHeader.vue';
 
 <template>
   <div class="app-container">
-    <TheHeader></TheHeader>
+    <TheHeader/>
     <main class="main-content">
-      <!-- conteúdo longo -->
+       <router-view />
     </main>
-    <TheFooter></TheFooter>
+    <TheFooter/>
   </div>
 </template>
 
