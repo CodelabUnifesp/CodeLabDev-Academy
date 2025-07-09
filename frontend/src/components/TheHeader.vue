@@ -3,7 +3,9 @@
 
 <template>
     <header class="header">
-    <a href="#">&lt/&gt CodeLab Academy </a>
+    <router-link to="/">
+      &lt/&gt CodeLab Academy
+    </router-link>
     <nav>
       <a href="#">Início</a>
       <a href="#">Sobre Nós</a>
