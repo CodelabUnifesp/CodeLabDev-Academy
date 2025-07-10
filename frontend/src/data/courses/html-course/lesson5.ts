@@ -32,19 +32,19 @@ const lesson5: Lesson = {
     { type: 'code_example', content: '&lt;a href="https://www.youtube.com" target="_blank"&gt;Abrir YouTube em nova aba&lt;/a&gt;' },
     { type: 'text', content: 'Esse link abrirá o YouTube em uma nova aba, mantendo a página atual aberta.' },
 
-      { type: 'subtitle', content: 'Juntando tudo' },
-  { type: 'text', content: 'Podemos usar os três atributos juntos para criar um link mais completo e amigável:' },
-  { type: 'code_example', content: '&lt;a href="https://www.youtube.com" title="Ir para o YouTube" target="_blank"&gt;Acesse o YouTube&lt;/a&gt;' },
-  { type: 'subtitle', content: 'Âncoras em HTML' },
-  { type: 'text', content: 'Além de criar links para outras páginas, também é possível criar <strong>links internos</strong>, ou seja, links que levam o usuário para uma <strong>seção específica dentro da mesma página</strong>. Esse recurso é conhecido como <strong>âncora</strong>.' },
-  { type: 'text', content: 'Para isso, utilizamos dois elementos principais:' },
-  { type: 'list', content: 'O atributo <code>id</code>, que identifica o local de destino na página.\nO símbolo <code>#</code>, que no <code>href</code> indica que o link será interno.' },
-  { type: 'subtitle', content: 'Como funciona?' },
-  { type: 'text', content: 'Primeiro, marcamos o elemento de destino com um <code>id</code> único. Por exemplo:' },
-  { type: 'code_example', content: '&lt;h1 id="secao1"&gt;Seção 1&lt;/h1&gt;' },
-  { type: 'text', content: 'Em seguida, criamos um link usando a tag <code>&lt;a&gt;</code>, e no atributo <code>href</code> colocamos <code>#</code> seguido do nome do <code>id</code>:' },
-  { type: 'code_example', content: '&lt;a href="#secao1"&gt;Ir para a Seção 1&lt;/a&gt;' },
-  { type: 'text', content: 'Quando o usuário clica nesse link, o navegador irá rolar a página até encontrar o elemento com o <code>id="secao1"</code>.' }
+    { type: 'subtitle', content: 'Juntando tudo' },
+    { type: 'text', content: 'Podemos usar os três atributos juntos para criar um link mais completo e amigável:' },
+    { type: 'code_example', content: '&lt;a href="https://www.youtube.com" title="Ir para o YouTube" target="_blank"&gt;Acesse o YouTube&lt;/a&gt;' },
+    { type: 'subtitle', content: 'Âncoras em HTML' },
+    { type: 'text', content: 'Além de criar links para outras páginas, também é possível criar <strong>links internos</strong>, ou seja, links que levam o usuário para uma <strong>seção específica dentro da mesma página</strong>. Esse recurso é conhecido como <strong>âncora</strong>.' },
+    { type: 'text', content: 'Para isso, utilizamos dois elementos principais:' },
+    { type: 'list', content: 'O atributo <code>id</code>, que identifica o local de destino na página.\nO símbolo <code>#</code>, que no <code>href</code> indica que o link será interno.' },
+    { type: 'subtitle', content: 'Como funciona?' },
+    { type: 'text', content: 'Primeiro, marcamos o elemento de destino com um <code>id</code> único. Por exemplo:' },
+    { type: 'code_example', content: '&lt;h1 id="secao1"&gt;Seção 1&lt;/h1&gt;' },
+    { type: 'text', content: 'Em seguida, criamos um link usando a tag <code>&lt;a&gt;</code>, e no atributo <code>href</code> colocamos <code>#</code> seguido do nome do <code>id</code>:' },
+    { type: 'code_example', content: '&lt;a href="#secao1"&gt;Ir para a Seção 1&lt;/a&gt;' },
+    { type: 'text', content: 'Quando o usuário clica nesse link, o navegador irá rolar a página até encontrar o elemento com o <code>id="secao1"</code>.' }
  
 ]
 }
