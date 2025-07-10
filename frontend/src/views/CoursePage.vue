@@ -56,8 +56,9 @@ import CourseContent from '../components/CourseText.vue'
 import CourseSubtitle from '../components/CourseSubtitle.vue'
 import CourseList from '../components/CourseList.vue'
 import CourseTextImportant from '../components/CourseTextImportant.vue'
+import CourseSubText from '../components/CourseSubText.vue'
 
-type ContentType = 'title' | 'subtitle' | 'text' | 'list' | 'important'
+type ContentType = 'title' | 'subtitle' | 'text' | 'list' | 'important' | 'subtext' 
 type ComponentMap = Record<ContentType, Component>
 
 const route = useRoute()
@@ -69,7 +70,8 @@ const componentMap: ComponentMap = {
   subtitle: CourseSubtitle,
   text: CourseContent,
   list: CourseList,
-  important: CourseTextImportant
+  important: CourseTextImportant,
+  subtext: CourseSubText
 }
 
 const selectedLesson = computed(() => {
@@ -91,7 +93,7 @@ const selectedLesson = computed(() => {
 }
 
 .sidebar {
-  width: 25%;
+  width: 23%;
   background-color: var(--background-color);
   padding: 1px 16px 1px 16px;
   border: 1px solid var(--border-color);
@@ -112,7 +114,8 @@ const selectedLesson = computed(() => {
 .sidebar li {
   padding: 5px 0px 0px 15px;
   margin: 0;
-  height: 45px;
+  height: 40px;
+  font-size: 0.85rem;
 }
 
 .time-tag {
@@ -161,6 +164,7 @@ const selectedLesson = computed(() => {
   border: 1px solid var(--selected-border-color);
   border-radius: 16px;
   background-color: var(--selected-background-color);
+  font-weight: 500;
 }
 
 </style>

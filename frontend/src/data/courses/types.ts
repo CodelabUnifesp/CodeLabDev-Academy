@@ -4,6 +4,7 @@ export type CourseElement =
   | { type: 'text'; content: string }
   | { type: 'list'; content: string }
   | { type: 'important'; content: string }
+  | { type: 'subtext', content: string}
 
 export type Lesson = {
   slug: string
