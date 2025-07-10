@@ -7,6 +7,7 @@ export type CourseElement =
   | { type: 'subtext', content: string}
   | { type: 'code_example', content: string}
   | { type: 'image', content: { src: string, alt?: string, caption?: string} }
+  | { type: 'table', content: { headers: string[]; rows: string[][]; caption?: string }}
 
 export type Lesson = {
   slug: string
