@@ -58,8 +58,9 @@ import CourseList from '../components/CourseList.vue'
 import CourseTextImportant from '../components/CourseTextImportant.vue'
 import CourseSubText from '../components/CourseSubText.vue'
 import CourseCodeExample from '../components/CourseCodeExample.vue'
+import CourseImage from '../components/CourseImage.vue'
 
-type ContentType = 'title' | 'subtitle' | 'text' | 'list' | 'important' | 'subtext' | 'code_example'
+type ContentType = 'title' | 'subtitle' | 'text' | 'list' | 'important' | 'subtext' | 'code_example' | 'image'
 type ComponentMap = Record<ContentType, Component>
 
 const route = useRoute()
@@ -73,7 +74,8 @@ const componentMap: ComponentMap = {
   list: CourseList,
   important: CourseTextImportant,
   subtext: CourseSubText,
-  code_example: CourseCodeExample
+  code_example: CourseCodeExample,
+  image: CourseImage
 }
 
 const selectedLesson = computed(() => {
