@@ -22,6 +22,7 @@
 
 <script setup lang="ts">
 import gitCourse from '../data/courses/git-github/git-github'
+import htmlCourse from '../data/courses/html-course/html';
 
 defineProps({
   title: {
@@ -43,17 +44,12 @@ const cards = [
     description: 'Aprenda os primeiros passos com Git e versionamento de código.'
   },
   {
-    title: 'HTML e CSS Básico',
-    time: '15 min',
-    image: 'https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067',
-    description: 'Construa sua primeira página web com HTML e CSS.'
+    slug: htmlCourse.slug,
+    title: htmlCourse.name,
+    time: htmlCourse.time,
+    image: 'https://arquivo.devmedia.com.br/marketing/img/guia-html-38051.png',
+    description: 'Construa sua primeira página web com HTML.'
   },
-  {
-    title: 'JavaScript para Iniciantes',
-    time: '20 min',
-    image: 'https://user-images.githubusercontent.com/68542775/167072911-dc31eac8-6885-4a05-9c25-279ecce22a79.png',
-    description: 'Entenda a lógica básica e manipulação de elementos com JS.'
-  }
 ]
 
 </script>

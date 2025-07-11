@@ -11,7 +11,9 @@ defineProps<{
 <style scoped>
 
 .text {
-  padding: 8px 0px;
+  padding: 0px 60px;
+  font-size: 0.8rem;
+  width: 80%;
 }
 
 </style>

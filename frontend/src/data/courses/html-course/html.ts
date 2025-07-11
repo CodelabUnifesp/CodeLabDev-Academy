@@ -8,11 +8,11 @@ import lesson6 from './lesson6'
 import lesson7 from './lesson7'
 
 
-const gitCourse: Course = {
-  slug: 'git_github',
-  name: 'Git e Github',
+const htmlCourse: Course = {
+  slug: 'html',
+  name: 'HTML',
   time: '1 hora',
   lessons: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7]
 }
 
-export default gitCourse
+export default htmlCourse
