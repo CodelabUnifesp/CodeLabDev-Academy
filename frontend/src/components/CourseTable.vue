@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   content: {
     headers: string[]
     rows: string[][]
