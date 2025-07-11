@@ -1,5 +1,4 @@
 <template>
-  <v-footer>
     <div class="footer">
       <div class="codelab-container">
         <a href="https://www.codelab-unifesp.org/">
@@ -20,7 +19,6 @@
         </a>
       </div>
     </div>
-  </v-footer>
 </template>
 
 <script setup lang="ts">

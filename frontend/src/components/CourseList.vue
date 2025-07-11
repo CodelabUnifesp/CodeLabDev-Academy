@@ -22,12 +22,12 @@ const props = defineProps<{
 }>()
 
 const hasLineBreaks = computed(() => {
-  return props.content.includes('/n')
+  return props.content.includes('\n')
 })
 
 const contentLines = computed(() => {
   return props.content
-    .split('/n')
+    .split('\n')
     .map(line => line.trim())
     .filter(line => line !== '')
 })
