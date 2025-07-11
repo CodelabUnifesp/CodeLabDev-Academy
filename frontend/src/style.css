@@ -34,6 +34,15 @@ html, body {
   padding: 2px 8px;
 }
 
+code {
+  color:#238667; 
+  font-weight:800; 
+  font-family:Andale Mono, monospace;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+
 strong {
   font-weight: 650;
 }
